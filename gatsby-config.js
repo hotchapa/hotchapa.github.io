@@ -96,8 +96,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://your-blog.netlify.app',
-        sitemap: 'https://your-blog.netlify.app/sitemap.xml',
+        host: 'https://hotchapa.github.io',
+        sitemap: 'https://hotchapa.github.io',
         policy: [
           {
             userAgent: '*',
