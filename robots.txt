@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://hotchapa.github.io
+Host: https://hotchapa.github.io
