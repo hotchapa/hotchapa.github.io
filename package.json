@@ -80,6 +80,7 @@
   "scripts": {
     "post": "gatsby-post-gen",
     "dev": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b master -r 'git@github.com:hotchapa/hotchapa.github.io.git'",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
