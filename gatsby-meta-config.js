@@ -6,10 +6,10 @@ module.exports = {
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: ``, // `zoomkoding/zoomkoding-gatsby-blog`,
+      repo: `hotchapa/hotchapa.github.io`,
     },
   },
-  ga: '0', // Google Analytics Tracking ID
+  ga: 'GTM-TR7MD977', // Google Analytics Tracking ID
   author: {
     name: `김지훈`,
     bio: {
