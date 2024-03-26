@@ -1,8 +1,8 @@
 module.exports = {
-  title: `zoomkoding.com`,
-  description: `줌코딩의 개발일기`,
+  title: `hotchapa`,
+  description: `hotchapa의 기록장`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://www.zoomkoding.com`,
+  siteUrl: `https://hotchapa.github.io`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
@@ -11,16 +11,16 @@ module.exports = {
   },
   ga: '0', // Google Analytics Tracking ID
   author: {
-    name: `정진혁`,
+    name: `김지훈`,
     bio: {
       role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      description: ['어제의 나를 이길 줄 아는', '개발이 재미있는', '코드 편의점을 꿈꾸는'],
+      thumbnail: 'ping.png', // Path to the image in the 'asset' folder
     },
     social: {
-      github: ``, // `https://github.com/zoomKoding`,
+      github: `https://github.com/hotchapa`, // `https://github.com/zoomKoding`,
       linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
-      email: ``, // `zoomkoding@gmail.com`,
+      email: `hotchapa@naver.com`, // `zoomkoding@gmail.com`,
     },
   },
 
@@ -43,12 +43,15 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2021.02 ~',
-        activity: '개인 블로그 개발 및 운영',
+        date: '2023.01 ~ 2023.12',
+        activity: '삼성 청년 소프트웨어 아카데미 (SSAFY)',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+        },
+      },
+      {
+        date: '2024.03 ~ ',
+        activity: '블로그 시작',
+        links: {
         },
       },
     ],
@@ -72,15 +75,51 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        title: '개발 블로그 테마 개발',
+        title: 'MUFFIN',
         description:
-          '개발 블로그를 운영하는 기간이 조금씩 늘어나고 점점 많은 생각과 경험이 블로그에 쌓아가면서 제 이야기를 담고 있는 블로그를 직접 만들어보고 싶게 되었습니다. 그동안 여러 개발 블로그를 보면서 좋았던 부분과 불편했던 부분들을 바탕으로 레퍼런스를 참고하여 직접 블로그 테마를 만들게 되었습니다.',
-        techStack: ['gatsby', 'react'],
-        thumbnailUrl: 'blog.png',
+          '개발 인생 첫 번째 프로젝트로 Open API와 외부 데이터를 활용한 영화 추천 웹 서비스 입니다.',
+        techStack: ['vue2', 'django'],
+        thumbnailUrl: 'muffinlogo.png',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          post: '',
+          github: '',
+          demo: '',
+        },
+      },
+      {
+        title: 'CRIT',
+        description:
+          '실시간 화상 챌린지와 소셜 커뮤니티를 결합한 웹 서비스 입니다.',
+        techStack: ['React', 'Redux-toolkit'],
+        thumbnailUrl: 'critlogo.png',
+        links: {
+          post: '',
+          github: 'https://github.com/hotchapa/CRIT',
+          demo: '',
+        },
+      },
+      {
+        title: 'GUDGEMENT',
+        description:
+          '소비내역 기반의 인디언포커를 통한 과소비 줄이기 습관 형성 모바일 서비스 입니다.',
+        techStack: ['React Native', 'Tanstack Query', 'Stomp'],
+        thumbnailUrl: 'gudgementlogo.png',
+        links: {
+          post: '',
+          github: 'https://github.com/hotchapa/Gudgement',
+          demo: '',
+        },
+      },
+      {
+        title: 'SENIOR NAVER',
+        description:
+          '시니어 세대의 쉬운 디지털 적응을 위한 맞춤형 정보제공 웹 서비스 입니다.',
+        techStack: ['React', 'Recoil'],
+        thumbnailUrl: 'seniornaverlogo.png',
+        links: {
+          post: '',
+          github: 'https://github.com/hotchapa/SeniorNaver',
+          demo: '',
         },
       },
     ],
