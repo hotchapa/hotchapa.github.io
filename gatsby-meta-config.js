@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['어제의 나를 이길 줄 아는', '개발이 재미있는', '코드 편의점을 꿈꾸는'],
-      thumbnail: 'ping.png', // Path to the image in the 'asset' folder
+      thumbnail: 'newping.png', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/hotchapa`, // `https://github.com/zoomKoding`,
