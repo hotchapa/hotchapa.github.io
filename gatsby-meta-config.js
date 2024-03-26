@@ -9,7 +9,7 @@ module.exports = {
       repo: `hotchapa/hotchapa.github.io`,
     },
   },
-  ga: 'GTM-TR7MD977', // Google Analytics Tracking ID
+  ga: 'G-3Y1204MZWR', // Google Analytics Tracking ID
   author: {
     name: `김지훈`,
     bio: {
