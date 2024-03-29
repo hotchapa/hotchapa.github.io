@@ -24,11 +24,11 @@
     transition: transform 0.2s;
 
     &:hover {
+      background-color: var(--post-card-hover-color);
+      transition: transform 0.2s;
       .title {
         text-decoration: underline;
       }
-      background-color: var(--post-card-hover-color);
-      transition: transform 0.2s;
     }
 
     @include md {
