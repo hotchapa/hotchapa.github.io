@@ -50,6 +50,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+          trackingId: `G-3Y1204MZWR`,
+          head: true,
+      },
+  },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: metaConfig.title,
