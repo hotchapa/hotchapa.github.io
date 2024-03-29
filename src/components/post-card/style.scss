@@ -24,8 +24,7 @@
     transition: transform 0.2s;
 
     &:hover {
-      background-color: var(--post-card-hover-color);
-      transition: transform 0.2s;
+      background-color: var(--post-card-hover-color);      
       .title {
         text-decoration: underline;
       }
