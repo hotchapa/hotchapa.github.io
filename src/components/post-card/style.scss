@@ -27,6 +27,8 @@
       .title {
         text-decoration: underline;
       }
+      color: var(--post-card-hover-color);
+      transition: transform 0.2s;
     }
 
     @include md {
