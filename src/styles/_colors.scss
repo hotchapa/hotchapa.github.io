@@ -23,6 +23,8 @@ html {
   --markdown-table-border-color: #dfe2e5;
   --markdown-blockquote-border-color: #dfe2e5;
   --markdown-border-color: #e1e4e8;
+  --post-card-hover-color: #768390;
+
 }
 
 // dark mode colors
@@ -45,7 +47,6 @@ html[data-theme='dark'] {
 
   --link-text-color: #90b0ec;
   --post-card-border-color: #363f47;
-  --post-card-hover-color: #23272a46;
 
 
   --markdown-table-even-cell-background-color: #2d333b;

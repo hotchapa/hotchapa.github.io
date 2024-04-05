@@ -22,7 +22,7 @@
 
     cursor: pointer;
     transition: transform 0.2s;
-
+    
     &:hover {
       background-color: var(--post-card-hover-color);      
       .title {
