@@ -4,6 +4,7 @@ import PostCardColumn from '../post-card-column';
 import './style.scss';
 
 function PostTabs({ tabIndex, onChange, tabs, posts, showMoreButton }) {
+  
   const tabPosts = useMemo(() => {
     if (tabs[tabIndex] === 'All') return posts;
     return posts.filter((post) => post.categories.includes(tabs[tabIndex]));

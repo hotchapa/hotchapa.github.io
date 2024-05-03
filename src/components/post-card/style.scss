@@ -2,14 +2,16 @@
 @use '../../styles/mixins'as *;
 
 .post-card-wrapper {
-  min-height: 150px;
+  min-height: 25px;
   width: 100%;
   display: flex;
   justify-content: center;
 
   .post-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
     max-width: $content-max-width;
@@ -17,9 +19,7 @@
     border-radius: 6px;
     padding: 30px;
     margin-bottom: 15px;
-
     color: var(--primary-text-color);
-
     cursor: pointer;
     transition: transform 0.2s;
     
@@ -33,12 +33,32 @@
     @include md {
       margin-bottom: 0;
     }
-
+    .emoji{
+      font-size: 30px;
+      background-color: rgba(144, 144, 161, 0.134);
+      border-radius: 999px;
+      padding: 10px;
+      display: flex;
+      margin-right: 25px;
+      justify-content: center;
+      align-items: center;
+    }
+    .date{
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      white-space: nowrap;  /* 텍스트를 한 줄로 처리 */
+    }
     .title {
       font-size: 18px;
       font-weight: 600;
-      margin-bottom: 7px;
+      // margin-bottom: 7px;
       line-height: 1.4;
+      white-space: nowrap;  /* 텍스트를 한 줄로 처리 */
+      overflow: hidden;     /* 넘치는 내용 숨김 */
+      text-overflow: ellipsis;  /* 넘치는 텍스트를 '...'로 표시 */
     }
 
     .description {
