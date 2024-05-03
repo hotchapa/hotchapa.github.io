@@ -15,7 +15,6 @@ const createBlogPages = ({ createPage, results }) => {
       path: node.fields.slug,
       component: blogPostTemplate,
       context: {
-        // additional data can be passed via context
         slug: node.fields.slug,
         nextSlug: next?.fields.slug ?? '',
         prevSlug: previous?.fields.slug ?? '',
@@ -39,17 +38,22 @@ const createPostsPages = ({ createPage, results }) => {
   createPage({
     path: `/posts`,
     component: categoryTemplate,
-    context: { currentCategory: 'All', edges, categories },
+    context: {
+      currentCategory: 'All',
+      edges,
+      categories,
+    },
   });
 
-  categories.forEach((currentCategory) => {
+  categories.forEach(currentCategory => {
+    const categoryEdges = edges.filter(({ node }) => node.frontmatter.categories.includes(currentCategory));
     createPage({
       path: `/posts/${currentCategory}`,
       component: categoryTemplate,
       context: {
         currentCategory,
         categories,
-        edges: edges.filter(({ node }) => node.frontmatter.categories.includes(currentCategory)),
+        edges
       },
     });
   });
@@ -72,6 +76,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               categories
               title
               date(formatString: "MMMM DD, YYYY")
+              emoji
             }
           }
           next {

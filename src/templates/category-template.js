@@ -8,14 +8,12 @@ import CategoryPageHeader from '../components/category-page-header';
 import PostTabs from '../components/post-tabs';
 
 function CategoryTemplate({ pageContext }) {
-  const { edges, currentCategory } = pageContext;
-  const { categories } = pageContext;
+  const { edges, currentCategory, categories } = pageContext;
   const currentTabIndex = useMemo(
     () => categories.findIndex((category) => category === currentCategory),
     [categories, currentCategory],
   );
   const posts = edges.map(({ node }) => new Post(node));
-
   const onTabIndexChange = useCallback(
     (e, value) => {
       if (value === 0) return navigate(`/posts`);
@@ -23,7 +21,7 @@ function CategoryTemplate({ pageContext }) {
     },
     [categories],
   );
-
+  
   return (
     <Layout>
       <Seo title="Posts" />
