@@ -36,13 +36,11 @@ function PostCard({ post }) {
   return (
     <div className="post-card-wrapper">
       <Link className="post-card" key={id} to={slug}>
-        <div className="content-wrapper">
           <div className="emoji">{emoji}</div>
           <div className="content">
             <div className="title">{title}</div>
             <div className="date">{date}</div>
           </div>
-        </div>
       </Link>
     </div>
   );
