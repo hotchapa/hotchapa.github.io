@@ -27,7 +27,6 @@ const createPostsPages = ({ createPage, results }) => {
   const categoryTemplate = require.resolve(`./src/templates/category-template.js`);
   const categorySet = new Set(['All']);
   const { edges } = results.data.allMarkdownRemark;
-
   edges.forEach(({ node }) => {
     const postCategories = node.frontmatter.categories.split(' ');
     postCategories.forEach((category) => categorySet.add(category));
