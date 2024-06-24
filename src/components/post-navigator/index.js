@@ -11,7 +11,7 @@ function PostNavigator({ prevPost, nextPost }) {
             <div className="direction">이전 글</div>
             <div className="title">{nextPost.title}</div>
           </Link>
-        )}
+        )}  
       </div>
       <div className="post-navigator-card-wrapper">
         {prevPost && (
