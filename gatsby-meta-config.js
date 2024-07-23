@@ -2,7 +2,7 @@ module.exports = {
   title: `hotchapa`,
   description: `hotchapa의 기록장`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://hotchapa.github.io`,
+  siteUrl: `https://hotchapa.github.io/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
