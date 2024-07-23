@@ -18,7 +18,6 @@ const createBlogPages = ({ createPage, results }) => {
         slug: node.fields.slug,
         nextSlug: next?.fields.slug ?? '',
         prevSlug: previous?.fields.slug ?? '',
-        author: node.frontmatter.author || 'Anonymous', // Set a default author
       },
     });
   });
@@ -77,7 +76,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               title
               date(formatString: "MMMM DD, YYYY")
               emoji
-              author
             }
           }
           next {
@@ -103,74 +101,4 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   createBlogPages({ createPage, results });
   createPostsPages({ createPage, results });
-};
-
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
-  createTypes(`
-    type SiteSiteMetadata {
-      title: String
-      description: String
-      language: String
-      siteUrl: String
-      ogImage: String
-      comments: Comments
-      ga: String
-      author: Author
-      about: About
-    }
-
-    type Comments {
-      utterances: Utterances
-    }
-
-    type Utterances {
-      repo: String
-    }
-
-    type Author {
-      name: String
-      bio: AuthorBio
-      social: AuthorSocial
-    }
-
-    type AuthorBio {
-      role: String
-      description: [String]
-      thumbnail: String
-    }
-
-    type AuthorSocial {
-      github: String
-      linkedIn: String
-      email: String
-    }
-
-    type About {
-      timestamps: [Timestamp]
-      projects: [Project]
-    }
-
-    type Timestamp {
-      date: String
-      activity: String
-      links: Links
-    }
-
-    type Project {
-      title: String
-      description: String
-      techStack: [String]
-      thumbnailUrl: String
-      links: Links
-    }
-
-    type Links {
-      github: String
-      post: String
-      googlePlay: String
-      appStore: String
-      demo: String
-    }
-  `);
 };
