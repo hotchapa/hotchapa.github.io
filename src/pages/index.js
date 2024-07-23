@@ -10,7 +10,22 @@ import PostTabs from '../components/post-tabs';
 
 function HomePage({ data }) {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node));
-  const { author, language } = data.site.siteMetadata;
+
+  const defaultAuthor = {
+    name: 'Anonymous',
+    bio: {
+      role: 'Unknown',
+      description: ['No description'],
+      thumbnail: '',
+    },
+    social: {
+      github: 'https://github.com',
+      linkedIn: '',
+      email: '',
+    },
+  };
+
+  const { author = defaultAuthor, language } = data.site.siteMetadata;
   const categories = ['All', ...getUniqueCategories(posts)];
   const featuredTabIndex = categories.findIndex((category) => category === 'featured');
   const [tabIndex, setTabIndex] = useState(featuredTabIndex === -1 ? 0 : featuredTabIndex);
