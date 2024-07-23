@@ -18,6 +18,7 @@ const createBlogPages = ({ createPage, results }) => {
         slug: node.fields.slug,
         nextSlug: next?.fields.slug ?? '',
         prevSlug: previous?.fields.slug ?? '',
+        author: node.frontmatter.author || 'Anonymous', // Set a default author
       },
     });
   });
@@ -76,6 +77,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               title
               date(formatString: "MMMM DD, YYYY")
               emoji
+              author
             }
           }
           next {
