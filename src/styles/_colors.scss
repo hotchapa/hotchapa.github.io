@@ -19,12 +19,11 @@ html {
   --link-text-color: rgb(55 53 47 / 70%);
   --post-card-border-color: rgba(0, 0, 0, 0.12);
 
-  --markdown-table-even-cell-background-color: #f6f8fa;
+  --markdown-table-even-cell-background-color: #999999;
   --markdown-table-border-color: #dfe2e5;
   --markdown-blockquote-border-color: #dfe2e5;
   --markdown-border-color: #e1e4e8;
   --post-card-hover-color: #009dff0e;
-
 }
 
 // dark mode colors
@@ -48,9 +47,8 @@ html[data-theme='dark'] {
   --link-text-color: #90b0ec;
   --post-card-border-color: #363f47;
 
-
-  --markdown-table-even-cell-background-color: #2d333b;
-  --markdown-table-border-color: #444c56;
+  --markdown-table-even-cell-background-color: #0e0e0f;
+  --markdown-table-border-color: #000000e1;
   --markdown-blockquote-border-color: #4f5864;
   --markdown-border-color: #e1e4e8;
 }
