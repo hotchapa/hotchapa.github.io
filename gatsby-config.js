@@ -27,6 +27,8 @@ module.exports = {
         env: {
           production: {
             policy: [{ userAgent: '*' }],
+            sitemap: 'https://hotchapa.github.io/sitemap.xml',
+            host: 'https://hotchapa.github.io',
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
@@ -52,10 +54,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
-          trackingId: `G-3Y1204MZWR`,
-          head: true,
+        trackingId: `G-3Y1204MZWR`,
+        head: true,
       },
-  },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
