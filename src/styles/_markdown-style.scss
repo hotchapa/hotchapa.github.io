@@ -292,11 +292,14 @@
   font-size: 85%;
   font-weight: 600;
   padding: 0.25em 0.35em;
+  margin: 2px;
+
 }
 
 .markdown :not(pre) > code.language-text {
-  background: rgba(0, 0, 0, 0.701);
-  color: #53d1ff;
+  background: rgb(26, 26, 28);
+  color: #13ff85;
+  border: 1px solid #13ff8566;
   overflow-wrap: break-word;
 }
 
@@ -688,9 +691,9 @@
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  margin-top: 24px;
+  margin-top: 80px;
   margin-bottom: 16px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.25;
 }
 
